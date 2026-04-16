@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Add Course - Mohammed</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="navbar">
+      <div class="brand">MOHAMMED</div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="my-courses.html">My Courses</a></li>
+        <li><a class="active" href="add-course.html">Add Course</a></li>
+        <li><a href="contact.html">Contact US</a></li>
+      </ul>
+      <button class="menu-toggle" aria-label="Toggle menu">☰</button>
+    </nav>
+  </header>
+
+  <main>
+    <section class="form-section">
+      <h2>Add New Course</h2>
+      <form class="course-form" action="#" method="post" onsubmit="alert('This is a demo form — connect to backend to save.'); return false;">
+        <label for="courseName">Course Name</label>
+        <input id="courseName" name="courseName" type="text" placeholder="e.g. Machine Learning" required>
+
+        <label for="instructor">Instructor</label>
+        <input id="instructor" name="instructor" type="text" placeholder="Dr. / Prof. Name" required>
+
+        <label for="schedule">Schedule</label>
+        <input id="schedule" name="schedule" type="text" placeholder="e.g. Sun & Tue – 10:00 AM" required>
+
+        <label for="credits">Credit Hours</label>
+        <input id="credits" name="credits" type="number" min="1" max="6" value="3" required>
+
+        <label for="notes">Notes</label>
+        <textarea id="notes" name="notes" placeholder="Any additional notes..."></textarea>
+
+        <button class="btn success" type="submit">Add Course ✓</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© 2026 Personal Course Organizer • All Rights Reserved</p>
+  </footer>
+
+  <script>
+    const toggle = document.querySelector('.menu-toggle');
+    const nav = document.querySelector('.nav-links');
+    toggle.addEventListener('click', () => nav.classList.toggle('open'));
+  </script>
+</body>
+    </html>
