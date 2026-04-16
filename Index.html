@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Personal Course Organizer - Mohammed</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="navbar">
+      <div class="brand">MOHAMMED</div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="my-courses.html">My Courses</a></li>
+        <li><a href="add-course.html">Add Course</a></li>
+        <li><a href="contact.html">Contact US</a></li>
+      </ul>
+      <button class="menu-toggle" aria-label="Toggle menu">☰</button>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <h1>Welcome to our course management system!</h1>
+      <p>Discover a wide range of specialized courses designed to expand your knowledge. Browse our curriculum, join a class, and begin your learning journey now.</p>
+      <a class="btn" href="my-courses.html">View Courses</a>
+    </section>
+
+    <section class="features">
+      <div class="feature">
+        <h3>Organize</h3>
+        <p>Keep all your courses and notes in one place.</p>
+      </div>
+      <div class="feature">
+        <h3>Add Courses</h3>
+        <p>Quickly add new courses with details and notes.</p>
+      </div>
+      <div class="feature">
+        <h3>Contact</h3>
+        <p>Reach out for support or feedback.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© 2026 Personal Course Organizer • All Rights Reserved</p>
+  </footer>
+
+  <script>
+    // بسيط لفتح القائمة على الموبايل
+    const toggle = document.querySelector('.menu-toggle');
+    const nav = document.querySelector('.nav-links');
+    toggle.addEventListener('click', () => {
+      nav.classList.toggle('open');
+    });
+  </script>
+</body>
+</html>
