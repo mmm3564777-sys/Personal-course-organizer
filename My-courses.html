@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>My Courses - Mohammed</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="navbar">
+      <div class="brand">MOHAMMED</div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a class="active" href="my-courses.html">My Courses</a></li>
+        <li><a href="add-course.html">Add Course</a></li>
+        <li><a href="contact.html">Contact US</a></li>
+      </ul>
+      <button class="menu-toggle" aria-label="Toggle menu">☰</button>
+    </nav>
+  </header>
+
+  <main>
+    <section class="courses-section">
+      <h2>My Courses</h2>
+      <div class="table-wrap">
+        <table class="courses-table">
+          <thead>
+            <tr>
+              <th>Course</th>
+              <th>Instructor</th>
+              <th>Schedule</th>
+              <th>Credit Hours</th>
+              <th>Notes</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Computer Programming 1</td>
+              <td>Dr. Ahmed Mahmoud</td>
+              <td>Fri 09:00 – 11:00</td>
+              <td>3</td>
+              <td>Intro to C</td>
+            </tr>
+            <tr>Mathematics 2</td>
+              <td>Dr. Ibrahim Youssef</td>
+              <td>Mon 10:00 – 12:00</td>
+              <td>3</td>
+              <td>Calculus II</td>
+            </tr>
+            <tr>
+              <td>Discrete Structures</td>
+              <td>Dr. Karim Nabil</td>
+              <td>Sat 10:00 – 12:00</td>
+              <td>3</td>
+              <td>Logic & Sets</td>
+            </tr>
+            <tr>
+              <td>Machine Learning</td>
+              <td>Prof. Salma</td>
+              <td>Wed 14:00 – 16:00</td>
+              <td>3</td>
+              <td>Intro ML</td>
+            </tr>
+            <tr>
+              <td>Data Structures</td>
+              <td>Dr. Omar</td>
+              <td>Tue 08:00 – 10:00</td>
+              <td>3</td>
+              <td>Arrays & Trees</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© 2026 Personal Course Organizer • All Rights Reserved</p>
+  </footer>
+
+  <script>
+    const toggle = document.querySelector('.menu-toggle');
+    const nav = document.querySelector('.nav-links');
+    toggle.addEventListener('click', () => nav.classList.toggle('open'));
+  </script>
+</body>
+</html>
